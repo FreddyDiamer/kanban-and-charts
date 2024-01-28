@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .button {
+    @apply px-6 py-2 bg-blue-800 rounded;
+  }
+
+  .task-item-inputs {
+    @apply border bg-white bg-opacity-5 p-1 rounded
+  }
+}
