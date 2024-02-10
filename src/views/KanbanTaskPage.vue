@@ -17,18 +17,12 @@ const task = kanbanStore.getTaskById(stageId, taskId)
     <div class="space-y-3">
       <div>
         <h3 class="mb-1">Заголовок задачи:</h3>
-        <p class="task-text text-base">{{ task.title }}</p>
+        <p class="mx-[30px] py-1 text-base">{{ task.title }}</p>
       </div>
       <div>
         <h3 class="mb-1">Описание:</h3>
-        <p class="task-text text-sm">{{ task.text }}</p>
+        <p class="mx-[30px] py-1 text-sm">{{ task.text }}</p>
       </div>
     </div>
   </div>
 </template>
-
-<style scoped>
-.task-text {
-  @apply mx-[30px] py-1;
-}
-</style>

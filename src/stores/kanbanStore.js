@@ -46,7 +46,6 @@ export const useKanbanStore = defineStore('kanbanStore', {
       stage.tasks[taskIndex] = newTaskInfo
     },
     saveStages() {
-      console.log({ st: this.stages })
       localStorage.setItem('stages', JSON.stringify(this.stages))
     },
   },

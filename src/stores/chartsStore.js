@@ -41,9 +41,11 @@ export const useChartStore = defineStore('chartsStore', {
   },
   actions: {
     changeChartVisibility(id, isShown) {
-      if (isShown) this.shownChartsId.push(id)
-      else
+      if (isShown) {
+        this.shownChartsId.push(id)
+      } else {
         this.shownChartsId = this.shownChartsId.filter(chartId => chartId != id)
+      }
     },
     toggleChartVisibility(id) {
       const isVisible = this.isShownChartId(id)

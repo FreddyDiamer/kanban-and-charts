@@ -5,13 +5,13 @@ import { LogoIcon } from './icons'
 <template>
   <nav class="bg-gray-900">
     <div
-      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 gap-4"
+      class="container flex flex-wrap items-center justify-between mx-auto p-4 gap-4"
     >
       <router-link :to="{ name: 'kanban' }">
         <div class="flex items-center space-x-3 rtl:space-x-reverse">
           <LogoIcon />
           <span class="self-center text-2xl font-semibold whitespace-nowrap"
-            >Sotnikov Test Task</span
+            >Kanban desk</span
           >
         </div>
       </router-link>

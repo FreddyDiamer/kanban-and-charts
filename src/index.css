@@ -10,4 +10,8 @@
   .task-item-inputs {
     @apply border bg-white bg-opacity-5 p-1 rounded
   }
+
+  .task-item {
+    @apply border p-2 text-sm rounded cursor-pointer hover:shadow-white shadow-md transition-shadow duration-300
+  }
 }

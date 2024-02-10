@@ -1,7 +1,7 @@
 <script setup>
 import draggable from 'vuedraggable'
 import KanbanStageHeader from './KanbanStageHeader.vue'
-import KanbanTaskItem from './KanbanTaskItem.vue'
+import KanbanTask from './KanbanTask.vue'
 
 defineProps({
   stage: {
@@ -21,7 +21,7 @@ defineProps({
       itemKey="name"
     >
       <template #item="{ element: task }">
-        <KanbanTaskItem :task="task" :stage="stage" />
+        <KanbanTask :task="task" :stage="stage" />
       </template>
     </draggable>
   </div>
